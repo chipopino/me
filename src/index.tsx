@@ -1,18 +1,19 @@
 import React, { useContext, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom/client';
 import {ContextPriveder} from 'components/Context';
-import Webamp from 'components/Webamp';
-import Menu from 'components/Menu';
 import Modal from 'components/Modal';
+import { cn } from 'methodes/global';
 import './index.css';
 
 const App: React.FC = () => {
 
-  return <div className='overflow-hidden w-screen h-screen flex flex-col'>
+  return <div className={cn(
+    'overflow-hidden w-screen h-screen',
+    'bg-background flex flex-col'
+  )}>
     <ContextPriveder>
       <Modal/>
-      <Webamp />
-      <Menu/>
+
     </ContextPriveder>
   </div>
 
