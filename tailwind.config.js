@@ -1,0 +1,30 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
+  theme: {
+    extend: {
+      screens: {
+        sm: "480px",
+        md: "568px",
+        lg: "976px",
+        xl: "1440px",
+      },
+      colors: {
+        primary: "#D2691E",     // Warm brown-orange
+        secondary: "#FFB347",   // Warm light orange
+        accent: "#F4A460",      // Soft peach
+        background: "#FFDDB5",  // Creamy white
+        text: "#4B1C24",        // Deep warm brown
+        border: "#4B1C24",      // Same warm brown
+        error: "#E57373",       // Soft red
+        success: "#F4A460",     // Sandy brown
+        warning: "#FFC300",     // Warm yellow
+        info: "#AF4035"         // Warm reddish tone
+      },
+    },
+  },
+  plugins: [],
+}
+
