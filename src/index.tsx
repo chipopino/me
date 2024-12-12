@@ -39,7 +39,7 @@ function Main() {
 
 function App() {
   return (
-    <Router>
+    <Router basename='/me'>
       <Routes>
         <Route path="/*" element={<Main />} />
       </Routes>
