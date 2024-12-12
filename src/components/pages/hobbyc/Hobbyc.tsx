@@ -37,7 +37,7 @@ export default function MyLife() {
         <h1>My hobbies (programming)</h1>
         <div className='flex flex-col gap-2 text-left'>
             <p>Sometimes I like to program shaders in Glsl:</p>
-            {isCurrent && <iframe className='mx-auto' width="640" height="360" src="https://www.shadertoy.com/embed/NdtXDn?gui=true&t=10&paused=true&muted=false" />}
+            {isCurrent && <iframe className='mx-auto w-full h-[400px]' src="https://www.shadertoy.com/embed/NdtXDn?gui=true&t=10&paused=true&muted=false" />}
             <span>you can visit the site for more ...</span>
             <hr />
             <p>
@@ -46,7 +46,7 @@ export default function MyLife() {
                 it would trace:
             </p>
             {/* @ts-ignore */}
-            {isCurrent && <iframe className='mx-auto' width="560" height="315" src="https://www.youtube.com/embed/T16XwPSwZ4A?si=68H0FUQ0YYyS3KS1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>}
+            {isCurrent && <iframe className='mx-auto w-full h-[400px]' src="https://www.youtube.com/embed/T16XwPSwZ4A?si=68H0FUQ0YYyS3KS1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>}
             <p>
                 This was done in c++ with wxWidgets and OpenGl, &nbsp;
                 <a href='https://github.com/DannyGersh/3d-laser-room'>see github</a>.
@@ -55,7 +55,7 @@ export default function MyLife() {
             <hr />
             A video game i created in python and Pygame, I also created the soundtrack:
             {/* @ts-ignore */}
-            {isCurrent && <iframe className='mx-auto' width="560" height="315" src="https://www.youtube.com/embed/ofhmF3u6QQU?si=az5fkgZR0p6aAZ4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>}
+            {isCurrent && <iframe className='mx-auto w-full h-[400px]' src="https://www.youtube.com/embed/ofhmF3u6QQU?si=az5fkgZR0p6aAZ4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>}
 
             <hr />
             <p>
