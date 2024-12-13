@@ -38,11 +38,11 @@ export default function Thoughts() {
                 its owr nature to be the monsters we are, and you can
                 forsfully "educate" humans for whatever education you whant,
                 at their core, their just like the place they came from, nature.
-                <br /><br /><br/>
-                <b>
-                    <p className='text-xl text-center mb-8'>pleas try to be cind hearted, be nice to each other, please, have a heart.</p>
-                </b>
+                <br /><br /><br />
             </p>
+            <b>
+                <p className='text-xl text-center mb-8'>pleas try to be cind hearted, be nice to each other, please, have a heart.</p>
+            </b>
         </div>
     </Page>
 }
