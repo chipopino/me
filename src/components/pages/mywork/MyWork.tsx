@@ -32,7 +32,7 @@ export default function MyWork() {
                 Here are my personal endeavors in web development.
             </p>
 
-            <h1 className='text-left'><a href='https://www.chipopino.com/exercise/'>www.chipopino.com/exercise/</a></h1>
+            <h1 className='break-all text-left'><a href='https://www.chipopino.com/exercise/'>www.chipopino.com/exercise/</a></h1>
 
             <p>
                 This is a website in which you can create exercises in math (or any other discipline) for other people to solve. Use the left mouse click on desktop and long tap on mobile to interact with exercises; also, some exercises are swipeable.
@@ -56,14 +56,14 @@ export default function MyWork() {
                 choice for large projects.
             </p>
 
-            {isCurrent && <iframe className='h-[300px] m-x-auto m-4 rounded-xl' src='https://www.chipopino.com/exercise' />}
+            {isCurrent && <iframe className='w-full h-[300px] m-x-auto m-4 rounded-xl' src='https://www.chipopino.com/exercise' />}
             <p>
                 You can embed exercises in any other website (no iframe).
                 example: (use left mouse or long tap to interact):
             </p>
 
             {/* @ts-ignore */}
-            <exercise-tag eid="36" class='block w-[300px] h-[200px] mx-auto rounded-xl overflow-hidden m-4' />
+            <exercise-tag eid="36" class='max-w-[300px] h-[200px] mx-auto rounded-xl overflow-hidden m-4' />
 
             <p>
                 Notice the theme is different, you just include
@@ -129,8 +129,8 @@ export default function MyWork() {
                 using my website.
             </p>
 
-            <h1><a href='https://www.chipopino.com/humus/'>www.chipopino.com/humus/</a></h1>
-            {isCurrent && <iframe className='h-[400px] m-x-auto m-4 rounded-xl' src='https://www.chipopino.com/humus/' />}
+            <h1 className='break-all'><a href='https://www.chipopino.com/humus/'>www.chipopino.com/humus/</a></h1>
+            {isCurrent && <iframe className='w-full h-[400px] m-x-auto m-4 rounded-xl' src='https://www.chipopino.com/humus/' />}
             <p>
                 This is basically Webamp - a web implementation of Winamp.
                 what I did is made it mobile friendly as well as added

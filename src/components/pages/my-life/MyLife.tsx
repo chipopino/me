@@ -133,7 +133,7 @@ function Disclaimer() {
 
     return <div className='max-w-[600px] w-[90vw] flex flex-col gap-4'>
         <p><b>
-            Disclaimer:<br/>
+            Disclaimer:<br />
             The contents here are based on personal experiences, opinions, and reflections. The author does not encourage or endorse any of the activities, behaviors, or actions described within. The events and experiences shared are personal and are not meant to serve as advice, instructions, or recommendations.
             The author expressly disclaims any responsibility or liability for any harm, injury, loss, or damage that may occur as a result of the reader attempting to replicate, emulate, or engage in any activities described in this website. Any decisions made based on the information contained herein are solely the responsibility of the reader.
             By selecting "Don't show this again," you acknowledge that you are responsible for ensuring all other individuals who use this device, browser, or access, view, or receive the contents of this website through you are made aware of and agree to this disclaimer. You further acknowledge that the author is not liable for any actions, consequences, or harm resulting from others accessing, sharing, or using this content.        </b></p>
@@ -180,7 +180,12 @@ export default function MyLife() {
     const isCurrent = page === '/mylife';
 
     useEffect(() => {
-        (isCurrent && !lget('disclaimerAgreed')) && setModalContent?.(<Disclaimer />);
+        if (isCurrent && !lget('disclaimerAgreed')) {
+            setModalContent?.(<Disclaimer />);
+        }
+        if (!isCurrent) {
+            setModalContent?.(null);
+        }
     }, [page])
 
     return <Page name={'/mylife'} className='text-center'>

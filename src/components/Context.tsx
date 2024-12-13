@@ -50,6 +50,11 @@ export function ContextPriveder({ children }: { children: ReactNode }) {
         }, 10)
     }, [])
 
+    useEffect(() => {
+        //@ts-ignore
+        setPage(location.pathname);
+    }, [location.pathname])
+
     return (
         <Context.Provider value={{ isModalOpen, modalContent, setModalContent, navigate, page, isLoaded }}>
             {children}
