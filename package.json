@@ -35,6 +35,7 @@
     "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
+    "@chipopino/exercises": "file:../exercise/exercise-templates",
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
     "@mui/icons-material": "^6.1.10",

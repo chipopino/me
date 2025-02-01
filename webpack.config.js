@@ -17,7 +17,8 @@ const config = {
   output: {
     path: d_dist(),
     filename: 'bundle.js',
-    publicPath: isProduction ? '/me/' : '/',
+    // publicPath: isProduction ? '/me/' : '/',
+    publicPath: '/me/',
   },
   devServer: {
     //open: true,
@@ -59,6 +60,7 @@ const config = {
       src: d_src(),
       components: d_components(),
       methodes: d_methodes(),
+      react: path.resolve('./node_modules/react'),
     }
   },
   mode: isProduction ? 'production' : 'development',
