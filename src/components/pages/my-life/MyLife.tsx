@@ -179,14 +179,14 @@ export default function MyLife() {
     const { page, setModalContent } = useCtx();
     const isCurrent = page === '/mylife';
 
-    useEffect(() => {
-        if (isCurrent && !lget('disclaimerAgreed')) {
-            setModalContent?.(<Disclaimer />);
-        }
-        if (!isCurrent) {
-            setModalContent?.(null);
-        }
-    }, [page])
+    // useEffect(() => {
+    //     if (isCurrent && !lget('disclaimerAgreed')) {
+    //         setModalContent?.(<Disclaimer />);
+    //     }
+    //     if (!isCurrent) {
+    //         setModalContent?.(null);
+    //     }
+    // }, [page])
 
     return <Page name={'/mylife'} className='text-center'>
         <h1>My Life</h1>
