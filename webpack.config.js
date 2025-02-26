@@ -18,7 +18,7 @@ const config = {
     path: d_dist(),
     filename: 'bundle.js',
     // publicPath: isProduction ? '/me/' : '/',
-    publicPath: '/me/',
+    publicPath: '/me',
   },
   devServer: {
     //open: true,
